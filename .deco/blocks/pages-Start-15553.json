@@ -1,1 +1,105 @@
-{"name":"Home","path":"/","sections":[{"__resolveType":"site/sections/ItWorks.tsx","name":"It Works!"},{"__resolveType":"Footer"}],"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "site/sections/SlidesDerrota.tsx",
+      "title": "Web APIs",
+      "header": {
+        "title": "Web APIs and cool stuff",
+        "author": "Viktor Marinho"
+      },
+      "slides": [
+        {
+          "components": [],
+          "content": "<p>by Viktor marinho</p>",
+          "title": "Web APIs and cool stuff",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10827/02659a5f-8edd-48da-82b8-0e73e5e1c7ab"
+        },
+        {
+          "components": [
+            {
+              "__resolveType": "site/sections/PopoverExample.tsx"
+            }
+          ],
+          "title": "What i want to talk about today",
+          "content": "<ul><li><p>Server-Sent Events (SSE) with Loaders</p></li><li><p>The Popover Web API</p></li><li><p>Making it good with the Anchor Web API</p></li><li><p>Being realistic and Polyfills</p></li></ul>"
+        },
+        {
+          "components": [
+            {
+              "__resolveType": "site/sections/SseExample.tsx"
+            }
+          ],
+          "title": "Server-Sent Events (SSE) with Loaders",
+          "content": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events\"><u>MDN Reference</u></a></p>"
+        },
+        {
+          "components": [],
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10827/26356bf3-b20d-4ed3-819c-a4d18a57660a",
+          "content": "<p>From the above snippet: My <em><u>SseExample.tsx</u></em> section</p>"
+        },
+        {
+          "components": [],
+          "content": "<p>From the above snippet: the <em><u>counterStream.ts</u></em> loader</p>",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10827/13b33243-7c8f-47cb-9b6a-58cf510d65b7"
+        },
+        {
+          "components": [],
+          "title": "Real world use-case",
+          "content": "<p>Product Auctions at <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.joiasvip.com.br\"><u>joiasvip.com.br</u></a></p><p></p><p>Deferring polling to the server-side, minimizing outbound requests</p><p></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://github.com/deco-sites/testejoias/blob/main/loaders/bids.ts\"><u>Code is here</u></a> (if you have access)</p>",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10827/e740cd8f-ee79-466f-8e56-32d3c374345a"
+        },
+        {
+          "components": [],
+          "title": "When to use SSE over Websockets",
+          "content": "<ul><li><p>One-way communication from server to client</p></li><li><p>Simpler implementation, runs over HTTP</p></li><li><p>Automatic reconnection handled by the browser</p></li></ul>",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10827/a927058a-13f2-4086-864e-ad106da9f60e"
+        },
+        {
+          "components": [],
+          "title": "Let's talk a little bit.",
+          "content": "<p>Have you used SSE before?</p><p></p><p>Do you have any use-case for it in mind, in your current projects?</p>",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10827/f0ead3b3-192a-4643-ac65-372e989d07c0"
+        },
+        {
+          "components": [
+            {
+              "__resolveType": "site/sections/PopoverExample.tsx"
+            }
+          ],
+          "title": "The Popover Web API",
+          "content": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://developer.mozilla.org/en-US/docs/Web/API/Popover_API\"><u>MDN Reference</u></a></p>"
+        },
+        {
+          "components": [],
+          "title": "How we do it now: Floating UI and Popper",
+          "content": "<p>The current standard for dealing with popover behavior is Popper and its evolution, Floating UI.</p><p></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://floating-ui.com/\"><u>What behavior are we talking about?</u></a></p>",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10827/5b749eb2-fdcc-4ff8-8e62-07bae8242e15"
+        },
+        {
+          "components": [],
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10827/2a049e41-5bdb-42b8-921d-287761ab7dd5"
+        },
+        {
+          "components": [],
+          "title": "You may be wondering...",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10827/ee781a70-b386-41d6-b574-4b6d530fdcb6",
+          "content": "<p>...and, yes! This feature have decent browser compatibility.</p>"
+        },
+        {
+          "components": [],
+          "title": "Big guys already use it in production",
+          "content": "<p>Some time ago, the Github team changed all their popups to use the native Popover API and reported to have deleted a lot of code.</p><p></p><p>Soon, the deco.cx admin will use it as well, i hope 😛</p>",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10827/53a687e9-2095-498f-9313-a989b4ee4341"
+        },
+        {
+          "components": [],
+          "title": "Being clear, the Popover API is a great primitive.",
+          "content": "<p>But we need more than that! We are not in the Floating UI levels yet.</p>"
+        }
+      ]
+    }
+  ],
+  "__resolveType": "website/pages/Page.tsx"
+}

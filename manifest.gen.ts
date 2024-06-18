@@ -4,15 +4,27 @@
 
 import * as $$$$$$$$$$$0 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$0 from "./loaders/counterStream.ts";
 import * as $$$$$$0 from "./sections/Footer.tsx";
 import * as $$$$$$1 from "./sections/ItWorks.tsx";
-import * as $$$$$$2 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$2 from "./sections/PopoverExample.tsx";
+import * as $$$$$$3 from "./sections/Slides.tsx";
+import * as $$$$$$4 from "./sections/SlidesDerrota.tsx";
+import * as $$$$$$5 from "./sections/SseExample.tsx";
+import * as $$$$$$6 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
+  "loaders": {
+    "site/loaders/counterStream.ts": $$$0,
+  },
   "sections": {
     "site/sections/Footer.tsx": $$$$$$0,
     "site/sections/ItWorks.tsx": $$$$$$1,
-    "site/sections/Theme/Theme.tsx": $$$$$$2,
+    "site/sections/PopoverExample.tsx": $$$$$$2,
+    "site/sections/Slides.tsx": $$$$$$3,
+    "site/sections/SlidesDerrota.tsx": $$$$$$4,
+    "site/sections/SseExample.tsx": $$$$$$5,
+    "site/sections/Theme/Theme.tsx": $$$$$$6,
   },
   "apps": {
     "site/apps/deco/htmx.ts": $$$$$$$$$$$0,
